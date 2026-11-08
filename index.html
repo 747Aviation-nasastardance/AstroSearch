@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <title>AstroSearch</title>
+  </head>
+  <body>
+    <div id="toparea">
+      <a href="index.html" class="header-link">
+        <div class="header">
+          <h1>Welcome to AstroSearch</h1>
+          <p>
+            Explore the universe with data directly from NASA, the <br/>
+            Mikulski Archive for Space Telescopes (MAST), IMCCE, and the Gaia archive.
+          </p>
+        </div>
+      </a>
+    </div>
+    <main>
+      <div id="homepagetop">
+        <div class="apod">
+          <h2>Astronomy Picture of the Day</h2>
+          <p id="image-title"></p>
+        </div>
+      </div>
+
+      <div class="search">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search by Object Name or Catalog ID"
+        />
+        <button id="search-button">Search</button>
+      </div>
+      <div class="abovesearchbartext">
+        <p>Look up any planet or galaxy and get information regarding it!</p>
+      </div>
+
+      <div id="homepagecentre">
+        <div id="nasa-image-carousel">
+          <div class="carousel-image-container">
+            <button id="previous-image">&#10094;</button>
+            <img
+              id="current-image"
+              src=""
+              alt="NASA Astronomy Picture of the Day"
+            />
+            <button id="next-image">&#10095;</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="searchresults">
+        <p id="notfound" style="display: none">
+          No astronomical object found. Please check the name or catalog ID and
+          try again.
+        </p>
+
+        <div class="mainresults">
+          <div class="maindata">
+            <h2>Object Information</h2>
+            <div class="carouselimages">
+            <button id="search-previous-image">&#10094;</button>
+            <img id="search-current-image" src="" alt="NASA image of the searched object">
+            <button id="search-next-image">&#10095;</button>
+          </div>
+          <p id="search-image-title"></p>
+          </div>
+          <div class="data">
+            <h2>Research & Observations</h2>
+          </div>
+        </div>
+
+        <div class="resultssidebar">
+          <h2>Astronomy Data</h2>    
+          <div id="astronomy-properties"></div>        
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="homepagebottom">
+        <div class="about">
+          <h2>About this project</h2>
+          <p>
+            AstroSearch is a project designed to make astronomical data easier
+            to discover and explore!
+          </p>
+        </div>
+
+        <div class="author">
+          <p>Author : Akhil R</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

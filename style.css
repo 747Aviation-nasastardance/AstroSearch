@@ -1,0 +1,218 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex:1;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
+}
+
+.apod {
+    text-align: center;
+}
+
+
+#search-input {
+    width: 350px;
+    height : 25px;
+}
+
+#search-button {
+    height: 25px;
+}
+
+.search {
+    align-items: center;
+    text-align: right;
+    font-size : 12px;
+    margin-top: -80px;
+    top : 20px
+}
+
+.abovesearchbartext {
+    text-align: right;
+    font-size : 12px;
+    top: 20x;
+}
+
+.about {
+    text-align: center;
+}
+
+.author {
+    text-align: center;
+}
+
+.about,
+.author {
+    margin: 1px 0 0 0;
+    text-align: center;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+#current-image {
+    width: auto;
+    height: 400px;
+    object-fit: contain;
+}
+
+#nasa-image-carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.carousel-image-container {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#previous-image,
+#next-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.carousel-image-container:hover #previous-image,
+.carousel-image-container:hover #next-image {
+    opacity: 1;
+}
+
+#previous-image {
+    left: 0;
+}
+
+#next-image {
+    right: 0;
+}
+
+.header-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+#searchresults {
+    display: none;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.mainresults {
+    flex: 3;
+    padding-left: 25px;
+    margin-top: 50px;
+    min-height: 700px;
+
+}
+
+.maindata {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+}
+
+.resultssidebar {
+    flex: 1;
+    border-left: 1px solid black;
+    padding-left: 25px;
+    margin-top: 50px;
+    min-height: 700px;
+}
+
+.data {
+    margin-top: 60px;
+    min-height: 400px;
+}
+
+.carouselimages {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto 0;
+}
+
+#search-current-image {
+    max-width: 1000px;
+    width: auto;
+    height: 400px;
+    object-fit: contain;
+}
+
+#search-previous-image,
+#search-next-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.carouselimages:hover #search-previous-image,
+.carouselimages:hover #search-next-image {
+    opacity: 1;
+}
+
+#search-previous-image {
+    left: 0;
+}
+
+#search-next-image {
+    right: 0;
+}
+
+
+#notfound {
+    position: absolute;
+    top: 175px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+#search-image-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
